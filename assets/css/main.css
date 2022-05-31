@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    background-color: var(--main-color);
+    background-color: rgba(247, 204, 149, 0.733);
 }
 
 section {
@@ -38,7 +38,7 @@ section {
 .btn {
     margin-top: 1rem;
     display: inline-block;
-    padding: 2rem 3.75rem;
+    padding: 1rem 2.75rem;
     border-radius: 30rem;
     font-size: 1.7rem;
     color: #fff;
@@ -51,7 +51,7 @@ section {
 }
 
 .header {
-    background: #fff;
+    background: rgba(247, 204, 149, 0.733);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,7 +64,7 @@ section {
     box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
 }
 
-.header .navbar a{
+.header .navbar a {
     margin: 0 1rem;
     font-size: 1.6rem;
     color: var(--black-color);
@@ -78,7 +78,7 @@ section {
     transition: 0.1s ease;
 }
 
-.header .buttons button{
+.header .buttons button {
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
@@ -90,27 +90,73 @@ section {
 
 
 /* Home start */
-    .home{
-        min-height: 100vh;
-        background:url(../images/home_background.jpg);
-        background-size: cover;
-        margin-top: -14.5rem;
-        display: flex;
-        align-items: center;
-    }
+.home {
+    min-height: 100vh;
+    background: url(../images/home_background.jpg);
+    background-size: cover;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+}
 
-    .home .content {
-        max-width: 60rem;
-    }
-    .home .content h3{
-        font-size: 6rem;
-        color: rgb(255, 246, 116);
-    }
-    .home .content p{
-        font-size: 2rem;
-        font-weight: 300;
-        line-height: 1.8;
-        padding: 1rem 0;
-        color: rgb(245, 152, 66);
-    }
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h1 {
+    font-size: 6rem;
+    color: rgb(255, 246, 116);
+}
+
+.home .content p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: rgb(245, 152, 66);
+}
+
 /* Home end */
+
+
+/* Menu start */
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    background: rgba(245, 153, 66, 0.144);
+    border-radius: 3rem;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.menu .box-container .box .box-head img{
+    width: 80%;
+    object-fit: cover;
+    margin: 2.5rem;
+}
+
+.menu .box-container .box .box-head h5{
+    font-size: 3rem;
+    padding: 1.2rem 0;
+}
+
+
+.menu .box-container .box .prices {
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box .prices span{
+    text-decoration: line-through;
+    padding: 0 1.5rem;
+    font-weight: 300;
+    font-size: 2rem;
+}
+/* Menu end */

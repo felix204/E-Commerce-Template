@@ -45,6 +45,23 @@ section {
     background: rgb(253, 207, 79);
 }
 
+.btn:hover {
+    opacity: 0.7;
+}
+
+.heading {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #fff;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color: rgb(248, 194, 123);
+}
+
 /* Header start */
 .header .logo img {
     height: 10rem;
@@ -127,9 +144,9 @@ section {
 }
 
 .menu .box-container .box{
-    background: rgba(245, 153, 66, 0.144);
+    background: rgba(245, 153, 66, 0.096);
     border-radius: 3rem;
-    min-height: 60rem;
+    min-height: 50rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -160,3 +177,88 @@ section {
     font-size: 2rem;
 }
 /* Menu end */
+
+/* Products start */
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.products .box-container .box{
+    background: rgba(245, 153, 66, 0.096);
+    text-align: center;
+    color: #fff;
+    position: relative;
+    border-radius: 3rem;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.products .box-container .box .box-head{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1000;
+}
+
+.products .box-container .box .box-head .name{
+    font-size: 3rem;
+    color: black;
+    font-weight:700 ;
+}
+
+.products .box-container .box .image img{
+    width: 90%;
+    object-fit: cover;
+    margin: 2.5rem;
+}
+
+.products .box-container .box .box-buttom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.products .box-container .box .box-buttom .info{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products .box-container .box .box-buttom .info .price{
+    position: absolute;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.products .box-container .box .box-buttom .info span{
+    text-decoration: line-through;
+    position: absolute;
+    top: 2rem;
+    left: 8rem;
+    font-size: 2rem;
+    color: black;
+}
+
+.products .box-container .box .box-buttom .product-btn {
+    font-size: 3rem;
+    border: .2rem dashed rgba(129, 129, 250, 0.425);
+    border-radius: 200%;
+    padding: 1rem 2rem;
+}
+
+.products .box-container .box .box-buttom .product-btn:hover{
+    opacity: 0.6;
+}
+/* Products end */

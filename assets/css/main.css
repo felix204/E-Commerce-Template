@@ -262,3 +262,39 @@ section {
     opacity: 0.6;
 }
 /* Products end */
+
+
+
+/* About start */
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+ .image {
+    flex: 1 1 45rem;
+}
+
+.about .row img{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+}
+
+.about .row .content h4{
+    font-size: 3rem;
+    color: rgb(245, 153, 66);
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: black;
+    padding: 1rem 0;
+    line-height: 1.8rem;
+}
+/* About end */

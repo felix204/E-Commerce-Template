@@ -298,3 +298,50 @@ section {
     line-height: 1.8rem;
 }
 /* About end */
+
+/* Review start */
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+    background: rgba(245, 153, 66, 0.096);
+    border-radius: 4rem;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review .box-container .box img{
+    width: 90%;
+    object-fit: cover;
+    margin: 2.5rem;
+    position: relative;
+}
+
+.review .box-container .box .user {
+    width: 55%;
+    height: 25%;
+    margin: 2.5rem;
+    border-radius: 12rem;
+    padding: 2rem;
+}
+
+.review .box-container .box h4{
+    font-size: 1.4rem;
+    padding: 1.2rem;
+    color: rgba(5, 112, 252, 0.993);
+}
+
+.review .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+}
+
+
+.review .box-container .box .starts i{
+    color: rgb(243, 243, 105);
+    font-size: 1.5rem;
+}
+/* Review start */

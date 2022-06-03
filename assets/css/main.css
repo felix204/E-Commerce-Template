@@ -406,3 +406,61 @@ section {
 }
 
 /* Contact end */
+
+/* Blog start */
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    
+}
+
+.blogs .box-container .box{
+    background: rgba(245, 153, 66, 0.096);
+    border-radius: 3rem;
+}
+
+.blogs .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    padding-bottom: 2rem;
+}
+
+.blogs .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blogs .box-container .box .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.blogs .box-container .box .content .title {
+    color: black;
+    font-size: 3rem;
+}
+
+.blogs .box-container .box .content span{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.blogs .box-container .box .content p{
+    opacity: 0.4;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+.blogs .box-container .box a{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+/* Blog end */
